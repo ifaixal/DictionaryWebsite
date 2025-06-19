@@ -9,25 +9,23 @@
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <img src="Resources/images/logo.svg" alt="">
+        <div class="settings">
+            <!-- Logo -->
+            <img src="Resources/images/logo.svg" alt="">
 
-        <!-- Selection of Font of the UI-->
-        <select name="fonts" id="Fonts">
-            <option value="Sans-Serif">Sans Serif</option>
-            <option value="Serif">Serif</option>
-            <option value="Mono">Mono</option>
-        </select>
-        
-        <!-- | a Divider for UI-->
-        <img src="" alt="Divider">
-        
-        <!-- Switch Slider for DarkThemes-->
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <img src="Resources/images/icon-moon.svg" alt="">
+            <!-- Selection of Font of the UI-->
+            <div class="fontSelection">
+                <p id="activeFontUI">Sans Serif</p>
+                <img src="Resources/images/icon-arrow-down.svg" alt="">
+            </div>
+            
+            <!-- Switch Slider for DarkThemes-->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <img src="Resources/images/icon-moon.svg" alt="">
+        </div>
 
         <!-- Search Bar -->
         <div class="SearchBar">

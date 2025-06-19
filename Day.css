@@ -1,0 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --theme-clr-accent: #A445ED;
+}
