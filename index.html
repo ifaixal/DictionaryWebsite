@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab</title>
+    <link rel="shortcut icon" href="Resources/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Day.css">
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="" alt="">
+
+        <!-- Selection of Font of the UI-->
+        <select name="fonts" id="Fonts">
+            <option value="Sans-Serif">Sans Serif</option>
+            <option value="Serif">Serif</option>
+            <option value="Mono">Mono</option>
+        </select>
+        
+        <!-- | a Divider for UI-->
+        <img src="" alt="Divider">
+        
+        <!-- Switch Slider for DarkThemes-->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <img src="Resources/images/icon-moon.svg" alt="">
+    </header>
+
+    <main>
+        <!-- Search Bar -->
+         <div class="SearchBar">
+            <input type="text" name="SearchWord" id="SearchWord" placeholder="Search for any word..." onkeypress="serachWord()">
+            <img src="Resources/images/icon-search.svg" alt="" onclick="searchWord()">
+         </div>
+
+         <!-- Data -->
+          <div class="WordHeading-PlayButton">
+            <h1 id="Word">Sorrow</h1>
+            <img src="Resources/images/icon-play.svg" alt="" onclick="playAudio()">
+            <h3 id="Pronounciation-Text">/ˈsɔɹoʊ/</h3>
+          </div>
+
+          <div class="noun">
+            <div class="noun-heading">
+                <span class="noun-name">noun</span>
+                <div class="line"></div>
+            </div>
+            <div class="Meaning">
+                <h3>Meaning</h3>
+                <ul>
+                    <li>Unhappiness, woe</li>
+                    <li>(usually in plural) An instance or cause of unhappiness.</li>
+                </ul>
+                <p>Parting is such sweet sorrow.</p>
+            </div>
+          </div>
+
+          <div class="verb">
+            <div class="verb-heading">
+                <span class="verb-name">verb</span>
+                <div class="line"></div>
+            </div>
+            <div class="Meaning">
+                <h3>Meaning</h3>
+                <ul>
+                    <li>To feel or express grief.</li>
+                    <li>To feel grief over; to mourn, regret.</li>
+                </ul>
+            </div>
+          </div>
+          <hr>
+
+          <div class="Source">
+            <p>Source</p>
+            <a href="https://en.wiktionary.org/wiki/sorrow">https://en.wiktionary.org/wiki/sorrow</a>
+            <img src="Resources/images/icon-new-window.svg" alt="">
+          </div>
+          
+    </main>
+    
+    <footer>
+        <p>Developed by iFaixal</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
