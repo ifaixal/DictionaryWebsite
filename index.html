@@ -15,21 +15,23 @@
 
             <!-- Selection of Font of the UI-->
             <div class="fontSelection">
-                <p id="activeFontUI">Sans Serif</p>
-                <img src="Resources/images/icon-arrow-down.svg" alt="">
+                <span id="activeFontUI">Sans Serif</span>
+                <img src="Resources/images/icon-arrow-down.svg" alt="" id="DropDownIMG">
             </div>
-            
-            <!-- Switch Slider for DarkThemes-->
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <img src="Resources/images/icon-moon.svg" alt="">
+                
+                <!-- Switch Slider for DarkThemes-->
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <img src="Resources/images/icon-moon.svg" alt="">
+            </div>
         </div>
 
         <!-- Search Bar -->
         <div class="SearchBar">
-            <input type="text" name="SearchWord" id="SearchWord" placeholder="Search for any word..." onkeypress="serachWord()">
+            <input type="text" name="SearchWord" id="SearchWord" placeholder="Search for any word..." onkeydown="keydown(event)">
             <img src="Resources/images/icon-search.svg" alt="" onclick="searchWord()">
          </div>
     </header>
