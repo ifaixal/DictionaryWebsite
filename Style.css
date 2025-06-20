@@ -312,3 +312,20 @@ body.Dark-Theme
     --font-clr: #FFFFFF;
     --theme-clr-accent-focus: #FFFFFF;
 }
+
+/* Data !Found */
+#dataNotFound{
+    text-align: center;
+    margin: 5rem;
+    display: none;
+}
+
+#emojiUpset{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#NoDataDescription{
+    margin-top: 3rem;
+    font-size: 1rem;
+}

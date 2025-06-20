@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="Resources/images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="settings">
             <!-- Logo -->
@@ -15,7 +15,7 @@
 
             <!-- Selection of Font of the UI-->
             <div class="fontSelection">
-                <span id="activeFontUI">Sans Serif</span>
+                <p id="activeFontUI">Sans Serif</p>
                 <img src="Resources/images/icon-arrow-down.svg" alt="" id="DropDownIMG">
                 <div class="dropdown-menu" id="DropdownMenu">
                     <p id="SansSerif" class="FontsDropDown">Sans Serif</p>
@@ -40,11 +40,19 @@
             <img src="Resources/images/icon-search.svg" alt="" onclick="searchWord()" id="SearchIcon">
          </div>
     </header>
+    
+    <!-- Data Not Found -->
+    <div id="dataNotFound">
+        <p id="emojiUpset">🙁</p>
+        <h1 id="NoDataDefinitionFound">No Definitions Found</h1>
+        <p id="NoDataDescription">Sorry pal, we couldn't find definitions for the word you were looking for.</p>
+     </div>
 
-    <main>
+    <main id="main">
          <!-- Data -->
           <div class="WordHeading-PlayButton">
             <h1 id="Word">sorrow</h1>
+            <audio id="wordAudio" src="https://api.dictionaryapi.dev/media/pronunciations/en/sorrow-us.mp3"></audio>
             <img src="Resources/images/icon-play.svg" alt="" onclick="playAudio()" class="playAudio">
           </div>
           <h3 id="Phonetics">/ˈsɔɹoʊ/</h3>
@@ -56,7 +64,7 @@
             </div>
             <div class="Meaning">
                 <h3 id="meaningHead">Meaning</h3>
-                <ul id="meaning-list-items">
+                <ul id="meaning-list-items" class="noun-meaning">
                     <li>Unhappiness, woe</li>
                     <li>(usually in plural) An instance or cause of unhappiness.</li>
                 </ul>
