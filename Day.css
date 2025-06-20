@@ -165,3 +165,119 @@ main{
     margin-right: 27rem;
     margin-left: 26rem;
 }
+
+.WordHeading-PlayButton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+}
+
+#Word{
+    font-size: 4rem;
+}
+
+.playAudio{
+    margin-top: 1rem;
+}
+
+#Phonetics{
+    color: var(--theme-clr-accent);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -8px;
+    margin-bottom: 2.25rem;
+}
+
+
+.noun{
+    margin-bottom: 2.25rem;
+}
+
+.noun-heading{
+    margin-bottom: 2.25rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem
+}
+
+.noun-name{
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #cfcfcf; /* or your theme line color */
+}
+
+#meaningHead{
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+ul{
+    font-size: large;
+    margin: 1rem;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+li::marker{
+    color: var(--theme-clr-accent);
+    font-size: medium;
+}
+
+#Sentence{
+    color: #6a6a6a;
+    font-weight: 500;
+}
+
+.verb{
+    margin-bottom: 2.25rem;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.verb-heading{
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem
+}
+
+.verb-name{
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#Source{
+    margin-bottom: 0.5rem;
+}
+
+a{
+    color: var(--theme-clr-accent);
+    text-decoration: none;
+}
+
+.redirectToSource{
+    filter: invert(34%) sepia(77%) saturate(2798%) hue-rotate(254deg) brightness(94%) contrast(99%);
+}
+
+.redirectToSource:hover{
+    cursor: pointer;
+}
+
+main{
+    margin-bottom: 2rem;
+}
+
+.Developer{
+    font-size: 0.75rem;
+    text-align: center;
+    color: #bcbcbc;
+}

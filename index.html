@@ -40,9 +40,9 @@
          <!-- Data -->
           <div class="WordHeading-PlayButton">
             <h1 id="Word">sorrow</h1>
-            <img src="Resources/images/icon-play.svg" alt="" onclick="playAudio()">
-            <h3 id="Pronounciation-Text">/ˈsɔɹoʊ/</h3>
+            <img src="Resources/images/icon-play.svg" alt="" onclick="playAudio()" class="playAudio">
           </div>
+          <h3 id="Phonetics">/ˈsɔɹoʊ/</h3>
 
           <div class="noun">
             <div class="noun-heading">
@@ -50,12 +50,12 @@
                 <div class="line"></div>
             </div>
             <div class="Meaning">
-                <h3>Meaning</h3>
-                <ul>
+                <h3 id="meaningHead">Meaning</h3>
+                <ul id="meaning-list-items">
                     <li>Unhappiness, woe</li>
                     <li>(usually in plural) An instance or cause of unhappiness.</li>
                 </ul>
-                <p>Parting is such sweet sorrow.</p>
+                <p id="Sentence">Parting is such sweet sorrow.</p>
             </div>
           </div>
 
@@ -65,25 +65,26 @@
                 <div class="line"></div>
             </div>
             <div class="Meaning">
-                <h3>Meaning</h3>
-                <ul>
+                <h3 id="meaningHead">Meaning</h3>
+                <ul id="verb-meaning-list-items">
                     <li>To feel or express grief.</li>
                     <li>To feel grief over; to mourn, regret.</li>
                 </ul>
             </div>
           </div>
-          <hr>
 
           <div class="Source">
-            <p>Source</p>
-            <a href="https://en.wiktionary.org/wiki/sorrow">https://en.wiktionary.org/wiki/sorrow</a>
-            <img src="Resources/images/icon-new-window.svg" alt="">
+            <p id="Source">Source</p>
+            <a id="link-Source" href="https://en.wiktionary.org/wiki/sorrow" target="_blank">
+                https://en.wiktionary.org/wiki/sorrow
+                <img src="Resources/images/icon-new-window.svg" alt="" class="redirectToSource">
+            </a>
+            
           </div>
-          
     </main>
     
     <footer>
-        <p>Developed by iFaixal</p>
+        <p class="Developer">Developed by iFaixal 🐺</p>
     </footer>
 
     <script src="Script.js"></script>
