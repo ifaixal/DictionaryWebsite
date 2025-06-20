@@ -7,6 +7,10 @@
 
 :root{
     --theme-clr-accent: #A445ED;
+    --background-clr: #F5F5F5;
+    --border-clr: #f5f5f5;
+    --font-clr: #000000;
+    --theme-clr-accent-focus: #A445ED;
 }
 
 body{
@@ -44,6 +48,22 @@ header{
 #activeFontUI{
     margin-right: 1.25rem;
     font-family: 'Inter';
+}
+
+#DropdownMenu{
+    display: none;
+    position: absolute;
+    left: 50rem;
+    margin-top: 2rem;
+    background-color: var(--background-clr);
+    width: 10rem;
+    padding: 1rem;
+    border: 2px solid var(--border-clr);
+    border-radius: 8px;
+}
+
+.FontsDropDown{
+    margin: 0.75rem;
 }
 
 .toggle{
@@ -139,14 +159,14 @@ header{
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #000000;
+    color: var(--font-clr);
     border-radius: 1rem;
-    border: 2px solid #F5F5F5;
-    background-color: #F5F5F5;
+    border: 2px solid var(--border-clr);
+    background-color: var(--background-clr);
 }
 
 #SearchWord:focus{
-    border-color: var(--theme-clr-accent);
+    border-color: var(--theme-clr-accent-focus);
     outline: none;
 }
 
@@ -280,4 +300,15 @@ main{
     font-size: 0.75rem;
     text-align: center;
     color: #bcbcbc;
+}
+
+/* Dark Theme */
+body.Dark-Theme
+{
+    background-color: #000000;
+    color: white;
+    --background-clr: #363636;
+    --border-clr: #363636;
+    --font-clr: #FFFFFF;
+    --theme-clr-accent-focus: #FFFFFF;
 }

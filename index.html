@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocab</title>
     <link rel="shortcut icon" href="Resources/images/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="Day.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>
@@ -17,12 +17,17 @@
             <div class="fontSelection">
                 <span id="activeFontUI">Sans Serif</span>
                 <img src="Resources/images/icon-arrow-down.svg" alt="" id="DropDownIMG">
+                <div class="dropdown-menu" id="DropdownMenu">
+                    <p id="SansSerif" class="FontsDropDown">Sans Serif</p>
+                    <p id="Serif" class="FontsDropDown">Serif</p>
+                    <p id="Mono" class="FontsDropDown">Mono</p>
+                </div>
             </div>
                 
                 <!-- Switch Slider for DarkThemes-->
             <div class="toggle">
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="themeToggle">
                     <span class="slider round"></span>
                 </label>
                 <img src="Resources/images/icon-moon.svg" alt="" class="moon">

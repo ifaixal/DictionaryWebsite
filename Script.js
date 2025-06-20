@@ -25,3 +25,9 @@ async function fetchWord(word)
         
     let data = await response.json();
 }
+
+let checkbox = document.getElementById("themeToggle");
+checkbox.addEventListener('change', function() {
+    document.body.classList.toggle('Dark-Theme');
+});
+
