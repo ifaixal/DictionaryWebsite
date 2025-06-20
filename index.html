@@ -25,21 +25,21 @@
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-                <img src="Resources/images/icon-moon.svg" alt="">
+                <img src="Resources/images/icon-moon.svg" alt="" class="moon">
             </div>
         </div>
 
         <!-- Search Bar -->
-        <div class="SearchBar">
-            <input type="text" name="SearchWord" id="SearchWord" placeholder="Search for any word..." onkeydown="keydown(event)">
-            <img src="Resources/images/icon-search.svg" alt="" onclick="searchWord()">
+        <div class="SearchBarClass">
+            <input autocomplete="off" type="text" name="SearchWord" id="SearchWord" placeholder="Search for any word..." onkeydown="keydown(event)">
+            <img src="Resources/images/icon-search.svg" alt="" onclick="searchWord()" id="SearchIcon">
          </div>
     </header>
 
     <main>
          <!-- Data -->
           <div class="WordHeading-PlayButton">
-            <h1 id="Word">Sorrow</h1>
+            <h1 id="Word">sorrow</h1>
             <img src="Resources/images/icon-play.svg" alt="" onclick="playAudio()">
             <h3 id="Pronounciation-Text">/ˈsɔɹoʊ/</h3>
           </div>

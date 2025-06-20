@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 :root{
@@ -13,7 +14,7 @@ body{
 }
 
 header{
-    margin-right: 26rem;
+    margin-right: 27rem;
     margin-left: 26rem;
 }
 
@@ -21,20 +22,27 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 3.75rem;
 }
 
 .fontSelection{
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-left: auto;
     border-right: 1px solid rgb(197, 197, 197);
-    padding: 1rem;
+    padding: 0.75rem;
+}
+
+#DropDownIMG{
+    margin-right: 0.5rem;
+}
+
+.fontSelection:hover{
+    cursor: pointer;
 }
 
 #activeFontUI{
-    margin-right: 1rem;
+    margin-right: 1.25rem;
     font-family: 'Inter';
 }
 
@@ -42,14 +50,23 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* cursor: pointer; */
+
+}
+
+.slider:hover{
+    background-color: var(--theme-clr-accent);
+}
+.moon:hover{
+    filter: invert(34%) sepia(77%) saturate(2798%) hue-rotate(254deg) brightness(94%) contrast(99%);
 }
 
 /* Slider */
 .switch{
     position: relative;
     display: inline-block;
-    width: 2.75rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 1.25rem;
     margin-left: 2rem;
     margin-right: 1rem;
 }
@@ -69,19 +86,19 @@ header{
     bottom: 0;
     background-color: #6a6a6a;
     -webkit-transition: .4s;
-    transition: .4s;
+    transition: transform .4s;
   }
 
   .slider:before {
     position: absolute;
     content: "";
-    height: 1rem;
-    width: 1rem;
-    left: 4px;
-    bottom: 4px;
+    height: 0.85rem;
+    width: 0.85rem;
+    left: 3px;
+    bottom: 3.5px;
     background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
-    transition: .4s;
+    transition:  .4s;
   }
 
   
@@ -90,7 +107,8 @@ header{
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--theme-clr-accent);
+    box-shadow: none;
+    outline: none;
   }
   
   input:checked + .slider:before {
@@ -107,3 +125,43 @@ header{
   .slider.round:before {
     border-radius: 50%;
   }
+
+.SearchBarClass{
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#SearchWord{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    border-radius: 1rem;
+    border: 2px solid #F5F5F5;
+    background-color: #F5F5F5;
+}
+
+#SearchWord:focus{
+    border-color: var(--theme-clr-accent);
+    outline: none;
+}
+
+#SearchIcon{
+    position: absolute;
+    transform: translateX(-150%);
+}
+
+#SearchIcon:hover{
+    cursor: pointer;
+}
+
+/* End of Header/Settings */
+
+main{
+    margin-right: 27rem;
+    margin-left: 26rem;
+}
