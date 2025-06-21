@@ -380,6 +380,7 @@ body.Dark-Theme
   .fontSelection{
     margin-right: 3rem;
     width: 10rem;
+    border-right: none;
   }
   #body{
     font-size: 1rem;
