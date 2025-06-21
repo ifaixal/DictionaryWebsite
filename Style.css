@@ -23,6 +23,29 @@ header{
     margin-left: 26rem;
 }
 
+main{
+    margin-right: 27rem;
+    margin-left: 26rem;
+}
+
+@media (max-width: 768px) {
+    main, header {
+    margin-right: 3rem;
+    margin-left: 2rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    main, header {
+        margin-right: 11rem;
+        margin-left: 10rem;
+        padding: 0 1rem;
+        max-width: 100%;
+      }
+}
+
 .settings{
     display: flex;
     flex-direction: row;
@@ -181,11 +204,6 @@ header{
 }
 
 /* End of Header/Settings */
-
-main{
-    margin-right: 27rem;
-    margin-left: 26rem;
-}
 
 .WordHeading-PlayButton{
     display: flex;
