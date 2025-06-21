@@ -11,6 +11,7 @@
     --border-clr: #f5f5f5;
     --font-clr: #000000;
     --theme-clr-accent-focus: #A445ED;
+    --Synonym-clr: #6a6a6a;
 }
 
 body{
@@ -255,6 +256,36 @@ li::marker{
 #Sentence{
     color: #6a6a6a;
     font-weight: 500;
+}
+
+.synonym{
+    display: none;
+    margin-bottom: 2.25rem;
+}
+
+#Synonym-head{
+    font-size: x-large;
+    color: var(--Synonym-clr);
+    margin-right: 1rem;
+}
+
+#Synoynms{
+    color: var(--theme-clr-accent);
+}
+
+#Antonyms{
+    color: var(--theme-clr-accent);
+}
+
+.Antonym{
+    display: none;
+    margin-bottom: 2.25rem;
+}
+
+#Antonym-head{
+    font-size: x-large;
+    color: var(--Synonym-clr);
+    margin-right: 1rem;
 }
 
 .verb{

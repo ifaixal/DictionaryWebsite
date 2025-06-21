@@ -40,6 +40,8 @@ function wordNotFound()
 
 function foundWordUpdateUI(data)
 {
+    console.log(data);
+    
     let dataNotFound = document.getElementById("dataNotFound");
     dataNotFound.style.display = "none";
     let main = document.getElementById("main");
@@ -79,6 +81,34 @@ function foundWordUpdateUI(data)
             Sentence.innerText = data[0].meanings[0].definitions[i].example;
     }    
 
+    let boole = true;
+    let synonym_container = document.querySelector(".synonym");
+    for (let i = 0; i < data[0].meanings.length; i++)
+    {
+        if (data[0].meanings[i].synonyms.length != 0)
+        {
+            boole = false;
+            displaySynonyms(data, i);
+            break;
+        }
+    }
+    if (boole)
+        synonym_container.style.display = "none";
+
+    let Aboole = true;
+    let Antonym_container = document.querySelector(".Antonym");
+    for (let i = 0; i < data[0].meanings.length; i++)
+    {
+        if (data[0].meanings[i].antonyms.length != 0)
+        {
+            Aboole = false;
+            displayAntonym(data, i);
+            break;
+        }
+    }
+    if (Aboole)
+        antonyms_container.style.display = "none";
+
     let verb_meaning_list_items = document.getElementById('verb-meaning-list-items');
     let verb = document.querySelector('.verb');
     if (data[0].meanings[1] && data[0].meanings[1].partOfSpeech === "verb")
@@ -99,6 +129,36 @@ function foundWordUpdateUI(data)
 function playAudio()
 {
     document.getElementById('wordAudio').play();
+}
+
+function displaySynonyms(data, i)
+{
+    let Synonyms = document.getElementById("Synoynms");
+    let synonym_container = document.querySelector(".synonym");
+
+    Synonyms.innerHTML = "";
+    for (let j = 0; j < data[0].meanings[i].synonyms.length; j++)
+    {
+        let a = document.createElement('a');
+        a.innerText = data[0].meanings[i].synonyms[j] + ", ";
+        Synonyms.appendChild(a);
+    }
+    synonym_container.style.display = "block";
+}
+
+function displayAntonym(data, i)
+{
+    let Antonym = document.getElementById("Antonyms");
+    let Antonym_container = document.querySelector(".Antonym");
+
+    Antonym.innerHTML = "";
+    for (let j = 0; j < data[0].meanings[i].antonyms.length; j++)
+    {
+        let a = document.createElement('a');
+        a.innerText = data[0].meanings[i].antonyms[j] + ", ";
+        Antonym.appendChild(a);
+    }
+    Antonym_container.style.display = "block";
 }
 
 
