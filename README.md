@@ -20,7 +20,7 @@ This web app allows users to search for any English word and displays its defini
 ## 📸 Screenshot
 
 > *(You can add your project screenshot here)*  
-> ![Screenshot](screenshot.png)
+> ![Screenshot](./screenshot.png)
 
 ---
 
