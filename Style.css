@@ -28,49 +28,6 @@ main{
     margin-left: 26rem;
 }
 
-@media (max-width: 426px) {
-    main, header {
-    max-width: 100%;
-  }
-  #playAudioIMG{
-    width: 3.25rem;
-    height: 4.25rem;
-  }
-  #Word{
-    margin-top: 1rem;
-    font-size: 2.5rem !important;
-  }
-  #logosvg{
-    display: none;
-  }
-  .fontSelection{
-    margin-right: 3rem;
-    width: 10rem;
-  }
-  #body{
-    font-size: 1rem;
-    padding: 0.25rem;
-  }
-}
-
-@media (max-width: 768px) {
-    main, header {
-    margin-right: 3rem;
-    margin-left: 2rem;
-    padding: 0 1rem;
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199.98px){
-    main, header {
-        margin-right: 11rem;
-        margin-left: 10rem;
-        padding: 0 1rem;
-        max-width: 100%;
-      }
-}
-
 .settings{
     display: flex;
     flex-direction: row;
@@ -402,4 +359,48 @@ body.Dark-Theme
 #NoDataDescription{
     margin-top: 3rem;
     font-size: 1rem;
+}
+
+
+@media (max-width: 426px) {
+    main, header {
+    max-width: 100%;
+  }
+  #playAudioIMG{
+    width: 3.25rem;
+    height: 4.25rem;
+  }
+  #Word{
+    margin-top: 1rem;
+    font-size: 2.5rem !important;
+  }
+  #logosvg{
+    display: none;
+  }
+  .fontSelection{
+    margin-right: 3rem;
+    width: 10rem;
+  }
+  #body{
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+    main, header {
+    margin-right: 3rem;
+    margin-left: 2rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    main, header {
+        margin-right: 11rem;
+        margin-left: 10rem;
+        padding: 0 1rem;
+        max-width: 100%;
+      }
 }
