@@ -28,6 +28,13 @@ main{
     margin-left: 26rem;
 }
 
+@media (max-width: 425px) {
+    main, header {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
     main, header {
     margin-right: 3rem;
