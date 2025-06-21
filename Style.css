@@ -36,6 +36,17 @@ main{
     width: 3.25rem;
     height: 4.25rem;
   }
+  #Word{
+    margin-top: 1rem;
+    font-size: 2.5rem !important;
+  }
+  #logosvg{
+    display: none;
+  }
+  .fontSelection{
+    margin-right: 3rem;
+    width: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
