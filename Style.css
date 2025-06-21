@@ -28,10 +28,13 @@ main{
     margin-left: 26rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     main, header {
-    padding: 0 1rem;
     max-width: 100%;
+  }
+  #playAudioIMG{
+    width: 4rem;
+    height: 5rem;
   }
 }
 
