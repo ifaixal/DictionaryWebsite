@@ -19,7 +19,7 @@ This web app allows users to search for any English word and displays its defini
 
 ## 📸 Screenshot
 
-> ![Screenshot](./1.png)
+> ![Screenshot](./Screenshot.png)
 
 ---
 
